@@ -11,6 +11,7 @@ export default function Recipe(props) {
     const {
         id,
         name,
+        type,
         cookTime,
         importance,
         difficulty,
@@ -41,7 +42,8 @@ export default function Recipe(props) {
             <span className='recipe__label'>Cook Time</span>
             <span className='recipe__value'>{cookTime}</span>
         </div> */}
-        <TonneCO2toObject recipe={props}/>
+        {type == "HouseholdEmissions" && <HouseholdEmissions recipe={props}/>}
+        {type == "CO2ToObject" && <TonneCO2toObject recipe={props}/>}
 
         {/* <div className='column__container'>
         <div className='recipe__row'>

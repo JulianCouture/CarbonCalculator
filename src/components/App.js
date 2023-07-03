@@ -39,10 +39,11 @@ function App() {
     setSelectedRecipeId(id)
   }
 
-  function handleRecipeAdd() {
+  function handleRecipeAdd(type) {
     const newRecipe = {
       id: uuidv4(),
       name: 'Annual Household Emissions',
+      type: type,
       importance: null,
       urgency: null,
       difficulty: null,
