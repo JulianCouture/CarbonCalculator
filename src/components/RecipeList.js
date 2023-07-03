@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Recipe from './Recipe'
 import { RecipeContext } from './App'
- 
+
 export default function RecipeList({recipes}) {
   const { handleRecipeAdd } = useContext(RecipeContext)
 
@@ -15,12 +15,11 @@ export default function RecipeList({recipes}) {
       })}
       </div>
       <div className='recipe-list__add-recipe-btn-container'>
-        <button 
-        className='btn btn--primary'
-        onClick={handleRecipeAdd}
-        >
-          Add Calculator
-        </button>
+        <select id="types">
+            <option value="CO2ToObject">CO2 To Object</option>
+            <option value="HouseholdEmissions">Household Emissions</option>
+        </select>
+        <button onClick={() => {handleRecipeAdd(document.getElementById("types").value)}}>Submit</button>
       </div>
     </div>
     
