@@ -12,12 +12,12 @@ export default function TonneCO2toObject({recipe}) {
 
     return (
         <div>
-            <div className='houselabel'><b>TonneCO2 to Object</b></div>
+            <div className='houselabel'><b>TonneCO2 to Object</b></div> 
         <div className="recipe-edit__details-grid">
             <div className='recipe-edit__row'>
                 <div><label 
                 htmlFor='name' 
-                className="recipe-edit__label">
+                className="recipe-edit__label_tonneco2">
                 Tonne CO2 
                 </label>
                 <input 
@@ -25,26 +25,26 @@ export default function TonneCO2toObject({recipe}) {
                 name='name' 
                 id='name'
                 onChange={handleChange}
-                className='recipe-edit__input'
+                className='recipe-edit__input_tonneco2'
                 />
                 </div>
             </div>
             <div className='recipe-edit__row'>
                 
-                <div>{Math.round(emissions/17980 * 100)/100}</div>
-                <div>{Math.round(emissions/17980 * 100)/100}</div>
-                <div>{Math.round(emissions/17980 * 100)/100}</div>
-                <div>{Math.round(emissions/17980 * 100)/100}</div>
-                <div>{Math.round(emissions/17980 * 100)/100}</div>
+                <div>{Math.round(emissions*5973.750 * 100)/100}</div>
+                <div>{Math.round(emissions*170.823 * 100)/100}</div>
+                <div>{Math.round(emissions* 1.225 * 100)/100}</div>
+                <div>{Math.round(emissions*.00032736 * 100)/100}</div>
+                <div>{Math.round(emissions*.00025504 * 100)/100}</div>
 
             </div>
             <div className='recipe-edit__row'>
                 
-                <div>Cardboard Box: {Math.round(emissions/17980 * 100)/100}</div>
-                <div>Car: {Math.round(emissions/17980 * 100)/100}</div>
-                <div>Airplane: {Math.round(emissions/17980 * 100)/100}</div>
-                <div>Metrodome: {Math.round(emissions/17980 * 100)/100}</div>
-                <div>Pentagon: {Math.round(emissions/17980 * 100)/100}</div>
+                <div>Cardboard Box </div>
+                <div>Mid-Sized Car</div>
+                <div>Airplane</div>
+                <div>Metrodome</div>
+                <div>Pentagon</div>
             </div>
             
             {/* <label 

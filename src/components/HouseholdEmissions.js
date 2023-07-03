@@ -62,7 +62,7 @@ export default function HouseholdEmissions({recipe}) {
                 className='recipe-edit__input'
                 />
                 </div>
-                <div>{emissions/17980}</div>
+                <div>{Math.round(emissions*.00063160*100000)/100000}</div>
             </div>
             <div className='recipe-edit__row'>
                 <div><label 
@@ -78,7 +78,7 @@ export default function HouseholdEmissions({recipe}) {
                 className='recipe-edit__input'
                 />
                 </div>
-                <div>{naturalgas/5532}</div>
+                <div>{Math.round(naturalgas*.00005562*100000)/100000}</div>
             </div>
             <div className='recipe-edit__row'>
                 <div><label 
@@ -94,7 +94,7 @@ export default function HouseholdEmissions({recipe}) {
                 className='recipe-edit__input'
                 />
                 </div>
-                <div>{propane/5235325}</div>
+                <div>{Math.round(propane*.0060130*100000)/100000}</div>
             </div>
             <div className='recipe-edit__row'>
                 <div><label 
@@ -110,7 +110,7 @@ export default function HouseholdEmissions({recipe}) {
                 className='recipe-edit__input'
                 />
                 </div>
-                <div>{residualoil/145125}</div>
+                <div>{Math.round(residualoil*.011580*100000)/100000}</div>
             </div>
             {/* <label 
             htmlFor='cookTime'
@@ -137,7 +137,7 @@ export default function HouseholdEmissions({recipe}) {
                 className='recipe-edit__input'
                 />
                 </div>
-                <div>{wood/59325}</div>
+                <div>{Math.round(wood*.00013500*100000)/100000}</div>
             </div>
             
             <div className='carfuels'><b>Car Fuels</b></div>
@@ -155,7 +155,7 @@ export default function HouseholdEmissions({recipe}) {
                 className='recipe-edit__input'
                 />
                 </div>
-                <div>{gasoline/4}</div>
+                <div>{Math.round(gasoline*.0087500*100000)/100000}</div>
             </div>
             <div className='recipe-edit__row'>
                 <div><label 
@@ -171,7 +171,7 @@ export default function HouseholdEmissions({recipe}) {
                 className='recipe-edit__input'
                 />
                 </div>
-                <div>{diesel/413}</div>
+                <div>{Math.round(diesel*.0103360*100000)/100000}</div>
             </div>
             <div className='recipe-edit__row'>
                 <div><label 
@@ -187,7 +187,7 @@ export default function HouseholdEmissions({recipe}) {
                 className='recipe-edit__input'
                 />
                 </div>
-                <div>{biodiesel/1414}</div>
+                <div>{Math.round(biodiesel*.0095700*100000)/100000}</div>
             </div>
             {/* <label 
             htmlFor='urgency'
