@@ -4,6 +4,7 @@ import { RecipeContext } from './App'
 import RecipeEdit from './RecipeEdit'
 import CounterHooks from './CounterHooks'
 import HouseholdEmissions from './HouseholdEmissions'
+import TonneCO2toObject from './TonneCO2toObject'
 
 export default function Recipe(props) {
     const { handleRecipeDelete,handleRecipeSelect } = useContext(RecipeContext)
@@ -40,7 +41,7 @@ export default function Recipe(props) {
             <span className='recipe__label'>Cook Time</span>
             <span className='recipe__value'>{cookTime}</span>
         </div> */}
-        <HouseholdEmissions recipe={props}/>
+        <TonneCO2toObject recipe={props}/>
 
         {/* <div className='column__container'>
         <div className='recipe__row'>
