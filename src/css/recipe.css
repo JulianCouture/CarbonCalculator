@@ -1,0 +1,66 @@
+.recipe {
+    padding: 20px;
+    padding-bottom: 40px;
+    /* border-bottom: 1px solid black;  */
+    border-radius: 12px;
+    margin: 15px 20px;
+    background-color: #f2f2f2;
+
+}
+
+.recipe:last-child {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+.recipe__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.recipe__title {
+
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+/* .column__container{
+    display: flex;
+    width: 100%;
+} */
+
+.recipe__row {
+    margin-top: 10px;
+}
+
+.recipe__label {
+    margin-right: 5px;
+    width: 240px;
+    display: inline-block;
+}
+
+label {
+    width: 280px;
+    display: inline-block;
+}
+
+.recipe__value {
+    font-weight: 300;
+
+}
+
+.recipe__value--indented {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.recipe__instructions {
+    white-space: pre-wrap;
+}
+
+.tonneCO2{
+    margin-left: 772px;
+}
