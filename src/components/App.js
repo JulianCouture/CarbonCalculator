@@ -42,7 +42,7 @@ function App() {
   function handleRecipeAdd(type) {
     const newRecipe = {
       id: uuidv4(),
-      name: 'Annual Household Emissions',
+      name: 'Carbon Calculator',
       type: type,
       importance: null,
       urgency: null,

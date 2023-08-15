@@ -3,10 +3,11 @@
     border: none;
     outline: none;
     font-weight: bold;
-    font-size: inherit;
+    font-size: 20px;
     border-radius: 5px;
     padding: 5px 20px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .btn--primary {

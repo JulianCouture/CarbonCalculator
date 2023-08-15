@@ -22,7 +22,7 @@ export default function Recipe(props) {
   return (
     <div className='recipe'>
         <div className='recipe__header'>
-            <h3 className='recipe__title'>{name}</h3>
+            <h3 className='recipe__title'>{type}</h3>
             <div>
                 {/* <button 
                 className='btn btn--primary mr-1'
@@ -43,8 +43,8 @@ export default function Recipe(props) {
             <span className='recipe__value'>{cookTime}</span>
         </div> */}
 
-        {type == "HouseholdEmissions" && <HouseholdEmissions recipe={props}/>}
-        {type == "CO2ToObject" && <TonneCO2toObject recipe={props}/>}
+        {type == "Household Emissions" && <HouseholdEmissions recipe={props}/>}
+        {type == "CO2 To Object" && <TonneCO2toObject recipe={props}/>}
 
         {/* <div className='column__container'>
         <div className='recipe__row'>
